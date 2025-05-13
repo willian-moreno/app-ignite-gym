@@ -1,0 +1,51 @@
+{
+  "plugins": [
+    "@ianvs/prettier-plugin-sort-imports"
+  ],
+  "importOrder": [
+    "^react$",
+    "^react-native$",
+    "^react.*?$",
+    "",
+    "<THIRD_PARTY_MODULES>",
+    "",
+    "^@assets/(.*)$",
+    "",
+    "^@components/(.*)$",
+    "",
+    "^@contexts/(.*)$",
+    "",
+    "^@dtos/(.*)$",
+    "",
+    "^@hooks/(.*)$",
+    "",
+    "^@layouts/(.*)$",
+    "",
+    "^@routes/(.*)$",
+    "",
+    "^@screens/(.*)$",
+    "",
+    "^@services/(.*)$",
+    "",
+    "^@storage/(.*)$",
+    "",
+    "^@utils/(.*)$",
+    "",
+    "^[./]"
+  ],
+  "importOrderParserPlugins": [
+    "typescript",
+    "jsx",
+    "decorators-legacy"
+  ],
+  "importOrderTypeScriptVersion": "5.3.3",
+  "importOrderCaseSensitive": false,
+  "singleAttributePerLine": true,
+  "printWidth": 100,
+  "tabWidth": 2,
+  "singleQuote": true,
+  "trailingComma": "all",
+  "arrowParens": "always",
+  "semi": false,
+  "endOfLine": "auto"
+}
