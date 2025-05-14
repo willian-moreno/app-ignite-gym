@@ -5,7 +5,8 @@ import { GluestackUIProvider, SafeAreaView } from '@gluestack-ui/themed'
 
 import { Loading } from '@components/loading'
 
-import { SignIn } from '@screens/sign-in'
+// import { SignIn } from '@screens/sign-in'
+import { SignUp } from '@screens/sign-up'
 
 import { config } from './config/gluestack-ui.config'
 
@@ -22,7 +23,7 @@ export function App() {
         backgroundColor="transparent"
         translucent
       />
-      <SafeAreaView flex={1}>{fontsLoaded ? <SignIn /> : <Loading />}</SafeAreaView>
+      <SafeAreaView flex={1}>{fontsLoaded ? <SignUp /> : <Loading />}</SafeAreaView>
     </GluestackUIProvider>
   )
 }
