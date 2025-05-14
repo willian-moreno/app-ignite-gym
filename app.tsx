@@ -23,7 +23,12 @@ export function App() {
         backgroundColor="transparent"
         translucent
       />
-      <SafeAreaView flex={1}>{fontsLoaded ? <SignUp /> : <Loading />}</SafeAreaView>
+      <SafeAreaView
+        flex={1}
+        bg="$gray700"
+      >
+        {fontsLoaded ? <SignUp /> : <Loading />}
+      </SafeAreaView>
     </GluestackUIProvider>
   )
 }
