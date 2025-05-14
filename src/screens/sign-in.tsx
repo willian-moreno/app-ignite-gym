@@ -48,6 +48,10 @@ export function SignIn() {
             secureTextEntry
           />
           <Button text="Acessar" />
+          <Button
+            text="Acessar"
+            variant="outline"
+          />
         </Center>
       </VStack>
     </VStack>
