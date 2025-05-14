@@ -13,6 +13,9 @@
       "@contexts/*": [
         "./src/contexts/*"
       ],
+      "@layouts/*": [
+        "./src/layouts/*"
+      ],
       "@dtos/*": [
         "./src/dtos/*"
       ],
