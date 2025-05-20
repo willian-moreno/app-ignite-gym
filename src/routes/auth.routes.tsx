@@ -15,7 +15,7 @@ type AuthRoutes = {
 
 export type AuthNavigatorRoutesProps = NativeStackNavigationProp<AuthRoutes>
 
-const { Navigator, Group, Screen } = createNativeStackNavigator<AuthRoutes>()
+const { Navigator, Screen } = createNativeStackNavigator<AuthRoutes>()
 
 export function AuthRoutes() {
   return (
@@ -26,17 +26,16 @@ export function AuthRoutes() {
         animation: 'fade_from_bottom',
         statusBarStyle: 'dark',
       }}
+      screenLayout={AuthLayout}
     >
-      <Group screenLayout={AuthLayout}>
-        <Screen
-          name="sign_in"
-          component={SignIn}
-        />
-        <Screen
-          name="sign_up"
-          component={SignUp}
-        />
-      </Group>
+      <Screen
+        name="sign_in"
+        component={SignIn}
+      />
+      <Screen
+        name="sign_up"
+        component={SignUp}
+      />
     </Navigator>
   )
 }
