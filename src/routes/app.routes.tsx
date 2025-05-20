@@ -6,7 +6,6 @@ import HistorySvg from '@assets/history.svg'
 import HomeSvg from '@assets/home.svg'
 import ProfileSvg from '@assets/profile.svg'
 
-import { Exercise } from '@screens/exercise'
 import { History } from '@screens/history'
 import { Home } from '@screens/home'
 import { Profile } from '@screens/profile'
@@ -40,8 +39,8 @@ export function AppRoutes() {
           backgroundColor: tokens.colors.gray600,
           borderTopWidth: 0,
           height: Platform.OS === 'android' ? 'auto' : 96,
-          paddingBottom: tokens.space['16'],
-          paddingTop: tokens.space['2'],
+          paddingBottom: tokens.space['20'],
+          paddingTop: tokens.space['4'],
         },
       }}
     >
@@ -82,13 +81,6 @@ export function AppRoutes() {
               height={iconSize}
             />
           ),
-        }}
-      />
-      <Screen
-        name="exercise"
-        component={Exercise}
-        options={{
-          tabBarButton: () => null,
         }}
       />
     </Navigator>

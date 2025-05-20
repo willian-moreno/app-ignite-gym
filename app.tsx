@@ -1,7 +1,7 @@
 import { StatusBar } from 'react-native'
 
 import { Roboto_400Regular, Roboto_700Bold, useFonts } from '@expo-google-fonts/roboto'
-import { GluestackUIProvider, SafeAreaView } from '@gluestack-ui/themed'
+import { GluestackUIProvider } from '@gluestack-ui/themed'
 
 import { Loading } from '@components/loading'
 
@@ -22,7 +22,7 @@ export function App() {
         backgroundColor="transparent"
         translucent
       />
-      <SafeAreaView flex={1}>{fontsLoaded ? <Routes /> : <Loading />}</SafeAreaView>
+      {fontsLoaded ? <Routes /> : <Loading />}
     </GluestackUIProvider>
   )
 }
