@@ -6,6 +6,7 @@ import HistorySvg from '@assets/history.svg'
 import HomeSvg from '@assets/home.svg'
 import ProfileSvg from '@assets/profile.svg'
 
+import { Exercise } from '@screens/exercise'
 import { History } from '@screens/history'
 import { Home } from '@screens/home'
 import { Profile } from '@screens/profile'
@@ -81,6 +82,16 @@ export function AppRoutes() {
               height={iconSize}
             />
           ),
+        }}
+      />
+      <Screen
+        name="exercise"
+        component={Exercise}
+        options={{
+          tabBarButton: () => null,
+          tabBarItemStyle: {
+            display: 'none',
+          },
         }}
       />
     </Navigator>
