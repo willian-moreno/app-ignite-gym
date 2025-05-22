@@ -15,8 +15,7 @@ export function HomeHeader() {
     >
       <UserPhoto
         source={{ uri: 'https://github.com/willian-moreno.png' }}
-        w="$16"
-        h="$16"
+        size="sm"
         alt="Imagem do usuário"
       />
       <VStack flex={1}>
